@@ -12,8 +12,8 @@
  **********/
 
 var questions = [
-  {question:"What's your company name?", key: "company_name"},
-  {question:"What's your Main CTA?", key: "main_cta"} //,
+  {question:"What's your company name?", description:"Lorem ipsum dolor sit amet,  ea clor in reprehenre eu fuint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", key: "company_name"},
+  {question:"What's your Main CTA?", description:"Input CTA",key: "main_cta"} //,
   // {question:"What's your email?", pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/},
   // {question:"Create your password", type: "password"}
 ]
@@ -76,6 +76,7 @@ var onComplete = function() {
     // load the next question
     function putQuestion() {
         inputLabel.innerHTML = questions[position].question
+        inputDescription.innerHTML = questions[position].description
         inputField.type = questions[position].type || 'text'
         inputField.value = questions[position].answer || ''
         inputField.focus()

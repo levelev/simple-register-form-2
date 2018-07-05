@@ -99,6 +99,17 @@ h1 {
   transition: .2s ease-in-out;
 }
 
+#inputDescription {
+  position: absolute;
+  pointer-events: none;
+  top: 140px;
+  left: 20px; /* same as container padding */
+  font-size: 14px;
+  font-weight: normal;
+  transition: .2s ease-in-out;
+}
+
+
 #inputContainer input:valid + #inputLabel {
   top: 6px;
   left: 42px; /* space for previous arrow */
